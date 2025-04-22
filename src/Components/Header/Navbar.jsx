@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = () => {
 
-    const Links  = <div className='flex gap-4'>
-         <li><a>Home</a></li>
+    const Links  = <div className='flex gap-4 items-center'>
+         <li><button className="btn btn-outline btn-accent">Home</button></li>
         <li><a>Listed Books</a></li>
         <li><a>Pages to Read</a></li>
     </div>
@@ -21,15 +21,16 @@ const Navbar = () => {
                             {Links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <h1 className='text-3xl font-bold'>Book Vibe</h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {Links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end space-x-2">
+                <button class="btn btn-info">Sign in</button>
+                <button class="btn btn-success">Sign up</button>
                 </div>
             </div>
         </div>
