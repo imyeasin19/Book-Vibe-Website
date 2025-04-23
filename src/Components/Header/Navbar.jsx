@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
     const Links  = <div className='flex gap-4 items-center'>
-         <li><button className="btn btn-outline btn-accent">Home</button></li>
-        <li><a>Listed Books</a></li>
-        <li><a>Pages to Read</a></li>
+         <Link to='/'><button className="btn btn-outline btn-accent">Home</button></Link>
+        <Link to='/About'>Listed Books</Link>
+        <Link>Pages to Read</Link>
     </div>
     return (
         <div>
@@ -29,8 +30,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-2">
-                <button class="btn btn-info">Sign in</button>
-                <button class="btn btn-success">Sign up</button>
+                <button className="btn btn-info">Sign in</button>
+                <button className="btn btn-success">Sign up</button>
                 </div>
             </div>
         </div>
