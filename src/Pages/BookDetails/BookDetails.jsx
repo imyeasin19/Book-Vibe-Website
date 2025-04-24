@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addtoDB } from '../../Utility/addToDB';
 
 const BookDetails = () => {
     const { id } = useParams();
@@ -12,6 +13,7 @@ const BookDetails = () => {
 
     const handleMarkAsRead = id =>{
 
+        addtoDB(id);
     }
     return (
         <div className='flex gap-12 mt-14'>

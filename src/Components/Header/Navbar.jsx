@@ -5,8 +5,8 @@ const Navbar = () => {
 
     const Links  = <div className='flex gap-4 items-center'>
          <Link to='/'><button className="btn btn-outline btn-accent">Home</button></Link>
-        <Link to='/About'>Listed Books</Link>
-        <Link>Pages to Read</Link>
+        <Link to='/readList'>Listed Books</Link>
+        <Link to='' >Pages to Read</Link>
     </div>
     return (
         <div>
